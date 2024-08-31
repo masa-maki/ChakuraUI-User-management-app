@@ -1,6 +1,9 @@
 # Simple App with user login and list of users
 (React + TypeScript + Vite + ChakuraUI)
 
+This application is developed using state and router from React to provide interactivity, also Chakura UI for design.
+The files and folders are managed with Atomic design.
+
 This application allows users to;
 
 - Login if the user ID exists
