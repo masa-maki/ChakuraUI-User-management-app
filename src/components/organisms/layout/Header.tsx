@@ -59,11 +59,13 @@ export const Header: FC = memo(() => {
           <Box pr={4}>
             <Link onClick={onClickUserManagement}>User list</Link>
           </Box>
+          <Box pr={4}>
           <Link onClick={onClickSetting}>Setting</Link>
+          </Box>
           <Link onClick={onClickLogout}>Logout</Link>
         </Flex>
         <Flex>
-          <SettingIconButton onOpen={onOpen} />
+          {/*<SettingIconButton onOpen={onOpen} />*/}
           <MenuIconButton onOpen={onOpen} />
         </Flex>
       </Flex>

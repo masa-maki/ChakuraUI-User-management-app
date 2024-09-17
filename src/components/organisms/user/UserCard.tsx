@@ -13,8 +13,7 @@ export const UserCard: FC<Props> = memo((props) => {
   const { id, imageUrl, userName, fullName, onClick } = props;
   return (
     <Box
-      w="260px"
-      h="260px"
+      w="100%"
       bg="white"
       borderRadius="10px"
       shadow="md"
