@@ -11,6 +11,7 @@ import {
   DrawerContent,
   useDisclosure,
   Button,
+  Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { MenuIconButton } from '../../../atoms/button/MenuIconButton';
@@ -33,7 +34,7 @@ export const Header: FC = memo(() => {
     <>
       <Flex
         as="nav"
-        bg="teal.500"
+        bg="teal.400"
         color="gray.50"
         align="center"
         justify="space-between"
@@ -47,7 +48,7 @@ export const Header: FC = memo(() => {
           onClick={onClickHome}
         >
           <Heading as="h1" fontSize={{ base: 'md', md: 'md' }}>
-            User Management App
+            <Image src="/Paw_white.svg" alt="M1 Manager" />
           </Heading>
         </Flex>
         <Flex

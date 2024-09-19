@@ -26,12 +26,12 @@ export const useAuth = () => {
             showMessage({ title: "You've logged in", status: 'success' });
             history.push('/home');
           } else {
-            showMessage({ title: 'User does not exist', status: 'error' });
+            showMessage({ title: 'Incorrect User or Password', status: 'error' });
             setLoading(false);
           }
         })
         .catch(() => {
-          showMessage({ title: 'User does not exist', status: 'error' });
+          showMessage({ title: 'Incorrect User or Password', status: 'error' });
           setLoading(false);
         })
         .finally();

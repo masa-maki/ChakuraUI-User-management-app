@@ -44,7 +44,8 @@ export const UserManagement: FC = memo(() => {
     [users, onSelectUser, onOpen]
   );
   return (
-    <>
+    <div id="main">
+      <h1>User Manager</h1>
       {loading ? (
         <Center h="100vh">
           <Spinner />
@@ -70,6 +71,6 @@ export const UserManagement: FC = memo(() => {
         onClose={onClose}
         isAdmin={loginUser?.isAdmin}
       />
-    </>
+    </div>
   );
 });
