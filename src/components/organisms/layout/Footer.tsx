@@ -10,9 +10,10 @@ export const Footer = () => {
           color="white"
           align="center"
           justify="space-between"
-          padding={{ base: 3, md: 5 }}
+          py={{ base: 1, md: 2 }}
+          px={{ base: 3, md: 5 }}
         >
-            <Text textAlign="center" w="100%">@ 2024 Masayuki</Text>
+            <Text textAlign="center" w="100%" fontSize="0.9rem">@ 2024 Masayuki</Text>
         </Flex>
         </>
     );

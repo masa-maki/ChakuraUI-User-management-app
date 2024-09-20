@@ -3,19 +3,11 @@ import { useHistory } from 'react-router-dom';
 import {
   Flex,
   Heading,
-  Link,
-  Box,
-  Drawer,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerContent,
   useDisclosure,
   Image,
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
 import { MenuIconButton } from '../../../atoms/button/MenuIconButton';
 import { MenuDrawer } from '../../molecules/MenuDrawer';
-import { SettingIconButton } from '../../../atoms/button/SettingIconButton';
 
 export const Header: FC = memo(() => {
   const { isOpen, onOpen, onClose } = useDisclosure();

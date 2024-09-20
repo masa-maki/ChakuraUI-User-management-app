@@ -28,7 +28,6 @@
 // const rootElement = document.getElementById('root');
 // render(<App />, rootelement);
 
-import React from 'react';
 import { render } from 'react-dom';
 
 import './style.css';
