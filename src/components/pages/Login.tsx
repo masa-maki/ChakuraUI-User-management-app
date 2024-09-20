@@ -25,7 +25,8 @@ export const Login: FC = memo(() => {
             <Image src="/Paw.svg" alt="M1 Manager" w="xl" mx="auto" />
           </Heading>
           {/* <Divider my={4} /> */}
-          <p>Welcome to User management page.</p>
+          <Text align="left">Welcome to User management page.<br />
+          (*For testing, you can type 1 to 10 for User ID. 10 is Admin ID. Password might be any string.)</Text>
           <Stack spacing={6} py={4} px={10}>
             <Input
               placeholder="User ID"
