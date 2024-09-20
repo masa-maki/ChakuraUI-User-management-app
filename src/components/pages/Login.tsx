@@ -1,5 +1,5 @@
 import { memo, FC, ChangeEvent, useState } from 'react';
-import { Box, Divider, Flex, Heading, Input, Stack, Image, flexbox, Show, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Input, Stack, Image, Show, Text } from '@chakra-ui/react';
 import { PrimaryButton } from '../../atoms/button/PrimaryButton';
 import { useAuth } from '../../hooks/useAuth';
 
@@ -11,14 +11,14 @@ export const Login: FC = memo(() => {
 
   const onChangeUserId = (e: ChangeEvent<HTMLInputElement>) =>
     setUserId(e.target.value);
-    const onChangeUserPwd = (e: ChangeEvent<HTMLInputElement>) =>
-      setUserPwd(e.target.value);
+  const onChangeUserPwd = (e: ChangeEvent<HTMLInputElement>) =>
+    setUserPwd(e.target.value);
 
   const onClickLogin = () => login(userId);
 
   return (
-    <Flex align="center" justify="center" height="100vh"  id="login_wrapper" px="4">
-      <Flex direction='row-reverse' bg="white" w="sm" height="90vh" w="900px"  borderRadius="md" shadow="md" sx={{ overflow: "hidden" }}>
+    <Flex align="center" justify="center" height="100vh"  id="login_wrapper" px="4" >
+      <Flex direction='row-reverse' bg="white" height="90vh" w="900px"  borderRadius="md" shadow="md" sx={{ overflow: "hidden" }} >
       <Box bg="white" w="100%" p={4} sx={{display:"flex", alignItems: "center"}}>
         <Stack w="80%" m="auto">
           <Heading as="h1" size="lg" textAlign="center">
@@ -27,7 +27,7 @@ export const Login: FC = memo(() => {
           {/* <Divider my={4} /> */}
           <Text align="left">Welcome to User management page.<br />
           (*For testing, you can type 1 to 10 for User ID. 10 is Admin ID. Password might be any string.)</Text>
-          <Stack spacing={6} py={4} px={10}>
+          <Stack spacing={6} py={4} px={{base:'0', sm:'10'}}>
             <Input
               placeholder="User ID"
               value={userId}

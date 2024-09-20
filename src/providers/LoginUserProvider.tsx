@@ -12,7 +12,7 @@ type LoginUser = User & { isAdmin: boolean };
 
 export type LoginUserContextType = {
   loginUser: LoginUser | null;
-  SetLoginUser: Dispatch<SetStateAction<LoginUser | null>>;
+  setLoginUser: Dispatch<SetStateAction<LoginUser | null>>;
 };
 
 export const LoginUserContext = createContext<LoginUserContextType>(
@@ -21,7 +21,7 @@ export const LoginUserContext = createContext<LoginUserContextType>(
 
 export const LoginUserProvider = (props: { children: ReactNode }) => {
   const { children } = props;
-  const [loginUser, setLoginUser] = useState<LoginUser | null>(null);
+  const [ loginUser, setLoginUser ] = useState<LoginUser | null>(null);
   return (
     <LoginUserContext.Provider value={{ loginUser, setLoginUser }}>
       {children}

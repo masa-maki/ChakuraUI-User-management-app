@@ -32,6 +32,9 @@ export const Header: FC = memo(() => {
         py={{ base: 2, md: 3 }}
         px={{ base: 3, md: 5 }}
       >
+        <Flex display={{ base: 'block', md: 'none'}}>
+          <MenuIconButton onOpen={onOpen} />
+        </Flex>
         <Flex
           align="center"
           as="a"
@@ -43,24 +46,16 @@ export const Header: FC = memo(() => {
             <Image src="/Paw_white.svg" alt="M1 Manager" />
           </Heading>
         </Flex>
-        <Flex
+        <Flex>
+          {/* Set User icon later */}
+        </Flex>
+        {/* <Flex
           align="center"
           fontSize="sm"
           flexGrow={2}
           display={{ base: 'none', md: 'flex' }}
         >
-          {/* <Box pr={4}>
-            <Link onClick={onClickUserManagement}>User list</Link>
-          </Box>
-          <Box pr={4}>
-          <Link onClick={onClickSetting}>Setting</Link>
-          </Box>
-          <Link onClick={onClickLogout}>Logout</Link> */}
-        </Flex>
-        <Flex>
-          {/*<SettingIconButton onOpen={onOpen} />*/}
-          <MenuIconButton onOpen={onOpen} />
-        </Flex>
+        </Flex> */}
       </Flex>
       <MenuDrawer
         onClose={onClose}

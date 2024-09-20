@@ -1,6 +1,6 @@
 import { memo, FC, useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
-import { AspectRatio, Box, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 // import { PrimaryButton } from '../../atoms/button/PrimaryButton';
 import { LinkPanel } from '../../atoms/button/LinkPanel';
 import { SideMenu } from '../organisms/layout/SideMenu';
