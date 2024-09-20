@@ -18,11 +18,11 @@ export const SideMenu: FC = memo(() => {
 
     return (
       <>
-      <Box bg="white" maxW="14em" m="0" py="8" px="4" display={{ base: 'none', md: 'block' }}>
+      <Box borderRight="1px" borderColor="gray.300" maxW="14em" m="0" py="8" px="4" display={{ base: 'none', md: 'block' }}>
         <SideButton onClick={onClickHome}><Icon as={MdHomeFilled} w={5} h={5} mr="2" />Dashboard</SideButton>
         <SideButton onClick={onClickUserManagement}><Icon as={MdEditNote} w={5} h={5} mr="2" />User Manager</SideButton>
         <SideButton onClick={onClickSetting}><Icon as={MdSettings} w={5} h={5} mr="2" />Setting</SideButton>
-        <Divider borderColor="gray" mt="2" mb="4" />
+        <Divider borderColor="gray.400" mt="2" mb="4" />
         <SideButton onClick={onClickLogout}><Icon as={MdClose} w={5} h={5} mr="2" />Logout</SideButton>
       </Box>
       </>

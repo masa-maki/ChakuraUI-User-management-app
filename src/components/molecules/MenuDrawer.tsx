@@ -39,7 +39,7 @@ export const MenuDrawer: FC<Props> = memo((props) => {
               <SideButton onClick={onClickHome}><Icon as={MdHomeFilled} w={5} h={5} mr="2" />Dashboard</SideButton>
               <SideButton onClick={onClickUserManagement}><Icon as={MdEditNote} w={5} h={5} mr="2" />User Manager</SideButton>
               <SideButton onClick={onClickSetting}><Icon as={MdSettings} w={5} h={5} mr="2" />Setting</SideButton>
-              <Divider borderColor="gray" my="2" />
+              <Divider borderColor="gray.400" my="2" />
               <SideButton onClick={onClickLogout}><Icon as={MdClose} w={5} h={5} mr="2" />Logout</SideButton>
             </Box>
             {/* <Button onClick={onClickHome} w="100%">

@@ -56,9 +56,9 @@ export const UserManagement: FC = memo(() => {
           <Spinner />
         </Center>
       ) : (
-        <Wrap p={{ base: 4, md: 10 }}>
+        <Wrap p={{ base: 4, md: 10 }} className="userlist">
           {users.map((user) => (
-            <WrapItem key={user.id} mx="auto" sx={{minWidth: "230px"}}>
+            <WrapItem key={user.id} mx="auto" flex="1" minWidth="230px">
               <UserCard
                 id={user.id}
                 imageUrl={userImageUrl[user.id]}

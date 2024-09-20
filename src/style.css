@@ -34,6 +34,19 @@
   font-style: normal;
 }
 
+@media only screen and (min-width: 1105px) {
+  .userlist > ul::after {
+    display: block;
+    content: "";
+    flex: 1;
+  }
+  .userlist > ul::before {
+    display: block;
+    content: "";
+    flex: 1;
+    order: 1;
+  }
+}
 
 /* @media only screen and (max-width: 600px) {
   .bgteal {

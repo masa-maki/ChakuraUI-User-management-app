@@ -19,7 +19,7 @@ export const Home: FC = memo(() => {
 
   return (
     <>
-    <Flex id="main" direction="row-reverse" p="0" >
+    <Flex id="main" direction="row-reverse" p="0">
       <Box w="100%">
         <Box pos="relative" w="100%" sx={{aspectRatio: "5/1"}}>
           <Image src="/bg_image2.jpg" h="100%" w="100%" objectFit='cover' />
@@ -33,7 +33,7 @@ export const Home: FC = memo(() => {
           </Text>
           <Stack direction={{base:'column', sm:'row'}} gap="4" maxW="800px" >
             <LinkPanel imgUrl="../../public/management_image.jpg" onClick={onClickUserManagement}>
-              User List
+              User Manager
             </LinkPanel>
             <LinkPanel imgUrl="../../public/setting_image.jpg" onClick={onClickSetting}>
               Setting
