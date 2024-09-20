@@ -17,7 +17,7 @@ export const LinkPanel: FC<Props> = memo((props) => {
       color="white"
       w="100%"
       h="20vh"
-      fontSize={"4vw"}
+      fontSize="2rem"
       _hover={{ opacity: 0.8 }}
       disabled={disabled || loading}
       isLoading={loading}

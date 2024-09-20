@@ -1,5 +1,5 @@
 import { memo, FC } from 'react';
-import { Box, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Stack, Text, color } from '@chakra-ui/react';
 
 type Props = {
   id: number;
@@ -16,12 +16,12 @@ export const UserCard: FC<Props> = memo((props) => {
       w="100%"
       bg="white"
       borderRadius="10px"
-      shadow="md"
+      shadow="sm"
       p={4}
-      _hover={{ cursor: 'pointer', opacity: 0.8 }}
+      _hover={{ cursor: 'pointer', opacity: 0.8, color: 'teal.500', shadow: "md" }}
       onClick={() => onClick(id)}
     >
-      <Stack textAlign="center">
+      <Stack textAlign="center" >
         <Image
           boxSize="160"
           borderRadius="full"
@@ -29,9 +29,9 @@ export const UserCard: FC<Props> = memo((props) => {
           alt={userName}
           m="auto"
         />
-        <Text fontSize="lg" fontWeight="bold">
+        <Heading fontSize="lg" fontWeight="bold">
           {userName}
-        </Text>
+        </Heading>
         <Text fontSize="sm" colo="gray">
           {fullName}
         </Text>

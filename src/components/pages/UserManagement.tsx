@@ -2,10 +2,13 @@
 import { memo, FC, useEffect, useCallback } from 'react';
 import {
   Center,
+  Heading,
   Spinner,
   useDisclosure,
   Wrap,
   WrapItem,
+  Box,
+  Flex,
 } from '@chakra-ui/react';
 
 import { UserCard } from '../organisms/user/UserCard';
@@ -13,6 +16,7 @@ import { useAllUsers } from '../../hooks/useAllUsers';
 import { useSelectUser } from '../../hooks/useSelectUser';
 import { UserDetailModal } from '../organisms/user/UserDetailModal';
 import { useLoginUser } from '../../hooks/useLoginUser';
+import { SideMenu } from '../organisms/layout/SideMenu';
 
 export const UserManagement: FC = memo(() => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -44,8 +48,9 @@ export const UserManagement: FC = memo(() => {
     [users, onSelectUser, onOpen]
   );
   return (
-    <div id="main">
-      <h1>User Manager</h1>
+    <Flex id="main" direction="row-reverse" p="0" gap="4" >
+      <Box p="8" w="100%">
+      <Heading>User Manager</Heading>
       {loading ? (
         <Center h="100vh">
           <Spinner />
@@ -71,6 +76,8 @@ export const UserManagement: FC = memo(() => {
         onClose={onClose}
         isAdmin={loginUser?.isAdmin}
       />
-    </div>
+      </Box>
+      <SideMenu />
+    </Flex>
   );
 });

@@ -32,7 +32,9 @@ export const Router: FC = memo(() => {
         />
       </LoginUserProvider>
       <Route path="*">
-        <Page404 />
+        <HeaderLayout>
+          <Page404 />
+        </HeaderLayout>
       </Route>
     </Switch>
   );

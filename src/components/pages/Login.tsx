@@ -7,9 +7,12 @@ export const Login: FC = memo(() => {
   const { login, loading } = useAuth();
 
   const [userId, setUserId] = useState<string>('');
+  const [userPwd, setUserPwd] = useState<string>('');
 
   const onChangeUserId = (e: ChangeEvent<HTMLInputElement>) =>
     setUserId(e.target.value);
+    const onChangeUserPwd = (e: ChangeEvent<HTMLInputElement>) =>
+      setUserPwd(e.target.value);
 
   const onClickLogin = () => login(userId);
 
@@ -32,9 +35,11 @@ export const Login: FC = memo(() => {
             <Input
               placeholder="Password"
               type={'password'}
+              value={userPwd}
+              onChange={onChangeUserPwd}
             />
             <PrimaryButton
-              disabled={userId === ''}
+              disabled={userId === '' || userPwd === ''}
               loading={loading}
               onClick={onClickLogin}
             >
@@ -47,7 +52,7 @@ export const Login: FC = memo(() => {
         <Box display={{base: "none"}}className="bgteal" bg="teal.300" w="100%" p={4} sx={{display:"flex", alignItems: "center"}} >
           <Stack w="80%" m="auto" sx={{color: "white"}}>
             <Image src="/login_image2.png" w="90%" m="auto" />
-            <Heading className='font_round'>Friendly Team starts here</Heading>
+            <Heading className='font_round' px="2">Friendly Team starts here</Heading>
             <Text>Manage your team with this web app.</Text>
           </Stack>
         </Box>

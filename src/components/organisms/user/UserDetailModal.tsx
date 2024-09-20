@@ -68,24 +68,36 @@ export const UserDetailModal: FC<Props> = memo((props) => {
                 value={username}
                 onChange={onChangeUserName}
                 isReadOnly={!isAdmin}
+                disabled={!isAdmin}
+                sx={{opacity: "1.0 !important"}}
+                mb="4"
               />
               <FormLabel>Full Name</FormLabel>
               <Input
                 value={name}
                 onChange={onChangeName}
                 isReadOnly={!isAdmin}
+                disabled={!isAdmin}
+                sx={{opacity: "1.0 !important"}}
+                mb="4"
               />
               <FormLabel>Mail</FormLabel>
               <Input
                 value={email}
                 onChange={onChangeEmail}
                 isReadOnly={!isAdmin}
+                disabled={!isAdmin}
+                sx={{opacity: "1.0 !important"}}
+                mb="4"
               />
               <FormLabel>Tel</FormLabel>
               <Input
                 value={phone}
                 onChange={onChangePhone}
                 isReadOnly={!isAdmin}
+                disabled={!isAdmin}
+                sx={{opacity: "1.0 !important"}}
+                mb="4"
               />
             </FormControl>
           </Stack>

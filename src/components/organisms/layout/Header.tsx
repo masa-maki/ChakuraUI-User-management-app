@@ -10,7 +10,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   useDisclosure,
-  Button,
   Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
@@ -57,13 +56,13 @@ export const Header: FC = memo(() => {
           flexGrow={2}
           display={{ base: 'none', md: 'flex' }}
         >
-          <Box pr={4}>
+          {/* <Box pr={4}>
             <Link onClick={onClickUserManagement}>User list</Link>
           </Box>
           <Box pr={4}>
           <Link onClick={onClickSetting}>Setting</Link>
           </Box>
-          <Link onClick={onClickLogout}>Logout</Link>
+          <Link onClick={onClickLogout}>Logout</Link> */}
         </Flex>
         <Flex>
           {/*<SettingIconButton onOpen={onOpen} />*/}
