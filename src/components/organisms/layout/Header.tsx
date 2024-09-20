@@ -37,7 +37,8 @@ export const Header: FC = memo(() => {
         color="gray.50"
         align="center"
         justify="space-between"
-        padding={{ base: 3, md: 5 }}
+        py={{ base: 2, md: 3 }}
+        px={{ base: 3, md: 5 }}
       >
         <Flex
           align="center"

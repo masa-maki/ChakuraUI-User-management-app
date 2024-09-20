@@ -21,7 +21,7 @@ export const Home: FC = memo(() => {
     <>
     <Flex id="main" direction="row-reverse" p="0" >
       <Box w="100%">
-        <Box pos="relative" w="100%" sx={{aspectRatio: "5/1"}} mb="4">
+        <Box pos="relative" w="100%" sx={{aspectRatio: "5/1"}}>
           <Image src="/bg_image2.jpg" h="100%" w="100%" objectFit='cover' />
         </Box>
         <Box id="main" p="8">
