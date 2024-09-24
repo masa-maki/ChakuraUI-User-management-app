@@ -14,13 +14,13 @@ export const useAuth = () => {
   const [loading, setLoading] = useState(false);
 
   const login = useCallback(
-    (id: string) => {
+    (id: string, pwd: string) => {
       setLoading(true);
 
       axios
         .get<User>(`https://jsonplaceholder.typicode.com/users/${id}`)
         .then((res) => {
-          if (res.data) {
+          if (res.data && pwd) {
             const isAdmin = res.data.id === 10 ? true : false;
             setLoginUser({ ...res.data, isAdmin });
             showMessage({ title: "You've logged in", status: 'success' });

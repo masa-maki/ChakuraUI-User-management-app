@@ -32,10 +32,10 @@ export const Home: FC = memo(() => {
             Please select.
           </Text>
           <Stack direction={{base:'column', sm:'row'}} gap="4" maxW="800px" >
-            <LinkPanel imgUrl="../../public/management_image.jpg" onClick={onClickUserManagement}>
+            <LinkPanel imgUrl="/management_image.jpg" onClick={onClickUserManagement}>
               User Manager
             </LinkPanel>
-            <LinkPanel imgUrl="../../public/setting_image.jpg" onClick={onClickSetting}>
+            <LinkPanel imgUrl="/setting_image.jpg" onClick={onClickSetting}>
               Setting
             </LinkPanel>
           </Stack>

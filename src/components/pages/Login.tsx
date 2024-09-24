@@ -14,7 +14,7 @@ export const Login: FC = memo(() => {
   const onChangeUserPwd = (e: ChangeEvent<HTMLInputElement>) =>
     setUserPwd(e.target.value);
 
-  const onClickLogin = () => login(userId);
+  const onClickLogin = () => login(userId, userPwd);
 
   return (
     <Flex align="center" justify="center" height="100vh"  id="login_wrapper" px="4" >
