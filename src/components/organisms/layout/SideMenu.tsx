@@ -13,7 +13,7 @@ export const SideMenu: FC = memo(() => {
       () => history.push('/home/user_management'),
       []
     );
-    const onClickSetting = useCallback(() => history.push('/home/setting'), []);
+    const onClickSetting = useCal lback(() => history.push('/home/setting'), []);
     const onClickLogout = useCallback(() => history.push('/'), []);
 
     return (

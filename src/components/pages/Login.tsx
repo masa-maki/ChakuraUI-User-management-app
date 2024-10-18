@@ -18,7 +18,8 @@ export const Login: FC = memo(() => {
 
   return (
     <Flex align="center" justify="center" height="100vh"  id="login_wrapper" px="4" >
-      <Flex direction='row-reverse' bg="white" height="90vh" w="900px"  borderRadius="md" shadow="md" sx={{ overflow: "hidden" }} >
+      {/* Login box */}
+      <Flex direction='row-reverse' bg="white" height="90vh" w="900px" borderRadius="md" shadow="md" sx={{ overflow: "hidden" }} >
       <Box bg="white" w="100%" p={4} sx={{display:"flex", alignItems: "center"}}>
         <Stack w="80%" m="auto">
           <Heading as="h1" size="lg" textAlign="center">
@@ -49,6 +50,7 @@ export const Login: FC = memo(() => {
           </Stack>
         </Stack>
       </Box>
+      {/* Side visual */}
       <Show above='md' >
         <Box display={{base: "none"}}className="bgteal" bg="teal.300" w="100%" p={4} sx={{display:"flex", alignItems: "center"}} >
           <Stack w="80%" m="auto" sx={{color: "white"}}>
